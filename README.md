@@ -7,7 +7,7 @@ This will be a triva game with serveral topics to choose from. Brainteesers are 
 ## Game Logic
 
 ```
-I will use a trivia API(https://api-ninjas.com/api/trivia) to pull in random triva questions to pose to users. 
+I will use a trivia API(https://the-trivia-api.com/api/questions) to pull in random triva questions to pose to users. 
 Users will choose a catergory by clicking on that catergory. A question from that catergory will be posed and multilple choice answers will be avaliabe for the user to answer. Ten questions from each catergory(4 categories)will be asked. If the user gets 5 or more questions correct, they will win. If the user gets less than 5 question correct, the game will be over and they will lose. This also will be timed. 
 
 
@@ -30,9 +30,9 @@ Users will choose a catergory by clicking on that catergory. A question from tha
 
 | Date      | Goals                                                                    |
 | --------- | ------------------------------------------------------------------------ |
-| Mon. 2/13| Create GitHub repository. Complete README.md.                            |
+| Mon. 2/13| Create GitHub repository. Complete README.md. Deploy to GitHub Pages                           |
 | Wed. 2/15 |                                                                          |
 | Sat. 2/18 |                                                                          |
 | Mon. 2/20 |                                                                          |
 | Wed. 2/22 |                                                                          |
-| Sat. 2/27 | Deploy to GitHub Pages. Submit completed project. Project presentations. |
+| Sat. 2/27 | Submit completed project. Project presentations. |
