@@ -28,16 +28,34 @@ getquestions().then((APIdata) => {
     const answers = [...results.incorrect_answers, results.correct_answer]
     shufflearray(answers)
 
-    document.getElementById('button1').innerHTML = answers[0]
-    document.getElementById('button2').innerHTML = answers[1]
-    document.getElementById('button3').innerHTML = answers[2]
-    
-    document.getElementById('button4').innerHTML = answers[3]
-    document.getElementById('button1').addEventListener('click',() => {
-        document.querySelectorAll('buttons')
-    });
+//Dynamically change the value of each answer choice.
+    for( let i = 0; i < 4; i++){
+        let index = i + 1;
+        document.getElementById(`button${index}label`).innerHTML = answers[i]
 
-});
+        document.getElementById(`button${index}`).value = answers[i]
+        
+    }
+ //Check if User Selected correct answer.   
+     document.getElementById('submit').addEventListener('click', () => {
+        document.getElementsByName('button').forEach((element) => {
+            if(element.checked){
+               console.log(element.value)
+               console.log(results.correct_answer)
+
+               if (element.value === results.correct_answer){
+                    alert('Good Job, That is Correct!')
+               }else{
+                    alert('Sorry, That was Incorrect')
+               }
+           
+            }
+          
+        })
+        }); 
+    }); 
+
+
 
 
 

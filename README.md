@@ -8,7 +8,7 @@ This will be a triva game with serveral topics to choose from. Brainteesers are 
 
 ```
 I will use a trivia API(https://the-trivia-api.com/api/questions) to pull in random triva questions to pose to users. 
-Users will choose a catergory by clicking on that catergory. A question from that catergory will be posed and multilple choice answers will be avaliabe for the user to answer. Ten questions from each catergory(4 categories)will be asked. If the user gets 5 or more questions correct, they will win. If the user gets less than 5 question correct, the game will be over and they will lose. This also will be timed. 
+Users will answer ten questions. If the user gets 5 or more questions correct, they will win. If the user gets less than 5 question correct, the game will be over and they will lose. 
 
 
 

@@ -16,7 +16,6 @@
    </nav>
     <div>
     <h1 id="title">Welcome to a Trivia Game </h1>
-    <div id="prompt">Please Select the Correct Answer Below!</div>
     </div>
         <div>
             <h3 id="category">Category:</h3>
@@ -24,15 +23,25 @@
         <div>
             <h2 id="question"></h2>
         </div>
+        <div>
+            <form id="prompt">Please Select the Correct Answer Below!</form>
+        </div>
    <div>
-        <button id="button1" onclick="window.location.reload()" name="buttons"></button>
-        <button id="button2" onclick="window.location.reload()" name="buttons"></button></button>
-        <button id="button3" onclick="window.location.reload()" name="buttons"></button></button>
-        <button id="button4" onclick="window.location.reload()" name="buttons"></button></button>
+        <input type="radio" name="button" id="button1" value="">
+        <label for="button1" id="button1label"></label>
 
+        <input type="radio" name="button" id="button2" value="">
+        <label for="button2" id="button2label"></label>
+
+        <input type="radio" name="button" id="button3" value="">
+        <label for="button3" id="button3label"></label>
+
+        <input type="radio" name="button" id="button4" value="">
+        <label for="button4" id="button4label"></label>
     </div>
-
-
+<div>
+    <button id="submit">Submit!</button>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
