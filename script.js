@@ -36,33 +36,48 @@ getquestions().then((APIdata) => {
         document.getElementById(`button${index}`).value = answers[i]
         
     }
+  
+
  //Check if User Selected correct answer.   
      document.getElementById('submit').addEventListener('click', () => {
         document.getElementsByName('button').forEach((element) => {
             if(element.checked){
-               console.log(element.value)
-               console.log(results.correct_answer)
 
                if (element.value === results.correct_answer){
-                    alert('Good Job, That is Correct!')
+                    alert('Good Job, That is Correct!, YOU WIN!')
+                    
                }else{
-                    alert('Sorry, That was Incorrect')
+                    alert('Sorry, That was Incorrect, YOU LOSE!')
                }
            
             }
           
         })
+
+        
         }); 
+        
+        let score = 0;
+        document.getElementById('submit').addEventListener('click', () => {
+            document.getElementsByName('button').forEach((element) => {
+                if(element.checked){
+                  
+    
+                   if (element.value === results.correct_answer){
+                    score++
+                    document.getElementById('scorekeeper').outerHTML = score      
+                }else{
+                   document.getElementById('scorekeeper').outerHTML = score
+                   
+                   
+        }
+            
+               
+      }
+            
+    })
+
+        
     }); 
 
-
-
-
-
-
-
-
-
-
-  
-
+});

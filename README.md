@@ -7,8 +7,13 @@ This will be a triva game with serveral topics to choose from. Brainteesers are 
 ## Game Logic
 
 ```
-I will use a trivia API(https://the-trivia-api.com/api/questions) to pull in random triva questions to pose to users. 
-Users will answer ten questions. If the user gets 5 or more questions correct, they will win. If the user gets less than 5 question correct, the game will be over and they will lose. 
+I will use a trivia API(https://the-trivia-api.com/api/questions) to pose questions to a user
+In this game, you only get once chance to get the correct answer.
+If you are not confident in your answer, Do not answer the question.
+Select 'Next Question' to move on to another quesion if you think you have no chance of getting the current question correct.
+If you submit a wrong answer, the game over and you will lose.
+If you submit a correct answer, you will win the game
+ 
 
 
 

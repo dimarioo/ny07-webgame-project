@@ -8,40 +8,57 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+<div class="container">
     <nav id="navbar">
-        <li><button>Homepage</button></li><br>
-        <li><button>About Game</button></li><br>
-        <li><button>Contact</button></li>
+        <li><button onclick="window.location.reload()">Homepage</button></li><br>
+        
    </nav>
     <div>
-    <h1 id="title">Welcome to a Trivia Game </h1>
+    <h1>Welcome to a Trivia Game!</h1>
     </div>
         <div>
             <h3 id="category">Category:</h3>
-        </div>
-        <div>
+        
+        
             <h2 id="question"></h2>
-        </div>
-        <div>
-            <form id="prompt">Please Select the Correct Answer Below!</form>
-        </div>
-   <div>
-        <input type="radio" name="button" id="button1" value="">
+        
+        
+            <h4 class="info">Please Select the Correct Answer Below!</h4>
+      </div>
+    <div class="answerchoice">
+        <input required type="radio" name="button" id="button1" value="" >
         <label for="button1" id="button1label"></label>
 
-        <input type="radio" name="button" id="button2" value="">
+        <input required type="radio" name="button" id="button2" value="" >
         <label for="button2" id="button2label"></label>
 
-        <input type="radio" name="button" id="button3" value="">
+        <input required type="radio" name="button" id="button3" value="" >
         <label for="button3" id="button3label"></label>
 
-        <input type="radio" name="button" id="button4" value="">
+        <input required type="radio" name="button" id="button4" value="" >
         <label for="button4" id="button4label"></label>
     </div>
-<div>
-    <button id="submit">Submit!</button>
+
+    <div><button id="submit">Submit!</button></div>
+    
+    <div><button id="newQuestion" onclick="window.location.reload()">Next Question</button></div>
+    <div id="scorekeeper">Score:</div>
 </div>
+
     <script src="script.js"></script>
 </body>
+<div class="instr"><ul>
+    <li>In this game, you only get once chance to get the correct answer.</li>
+    <li>If you are not confident in your answer, Do not answer the question.</li>
+    <li>Select 'Next Question' to move on to another question.</li>
+    <li>If you submit a wrong answer, the game is over and you will lose.</li>
+    <li>If you submit a correct answer, you will win the game.</li>
+</div>
+
+</ul>
+</div>
 </html>
+
+
